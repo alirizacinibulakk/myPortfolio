@@ -39,7 +39,6 @@ const TiltImage = ({ src, alt, description, projectLink, codeLink }) => {
         el.addEventListener('mousedown', handleMouseDown);
         el.addEventListener('mouseup', handleMouseUp);
 
-        // Cleanup
         return () => {
             el.removeEventListener('mousemove', handleMove);
             el.removeEventListener('mouseout', handleMouseOut);

@@ -86,7 +86,7 @@ h6 {
 
 header {
   margin-inline: 1.5rem;
-  padding-block: 1rem;
+  padding-block: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,6 +129,7 @@ header h1 {
   border-top-left-radius: 160px;
   border-bottom-right-radius: 160px;
   padding: 24px;
+  width: 320px;
   margin-inline: 24px;
   box-shadow: -4px -4px 2px 0px #12F7D6;
   margin-bottom: 64px;
@@ -222,13 +223,17 @@ header h1 {
   cursor: pointer;
   padding: 16px 32px 16px 32px;
   background-color: var(--white);
-  width: fit-content;
+  max-width: fit-content;
   border-radius: 32px;
 }
 
 .about-me {
   margin-inline: 31px;
   margin-bottom: 64px;
+}
+
+.about-me-title {
+  margin-bottom: 32px;
 }
 
 .about-me-title>span:first-of-type {
@@ -245,9 +250,9 @@ header h1 {
   font-family: 'DotGothic16', sans-serif;
   font-weight: 400;
   font-size: 32px;
-  line-height: 36px;
+  line-height: 42px;
   color: var(--white);
-  padding-inline: 16px;
+  padding-left: 16px;
 }
 
 
@@ -276,7 +281,7 @@ header h1 {
   font-family: 'DotGothic16', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 32px;
   color: var(--white);
   padding-inline: 16px;
   letter-spacing: 0.08em;
@@ -431,7 +436,9 @@ header h1 {
 .skills-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 64px;
+  column-gap: 64px;
+  row-gap: 32px;
+  justify-items: center;
 }
 
 .skill {
@@ -606,7 +613,7 @@ header h1 {
   flex-direction: column;
   top: 0;
   left: 0;
-  padding: 64px 24px 112px 24px;
+  padding: 64px 24px 0px 24px;
 }
 
 .contact-container h2 {
@@ -630,12 +637,118 @@ header h1 {
   letter-spacing: 0%;
   text-align: center;
   color: var(--white);  
+  margin-bottom: 64px;
 }
 
-.contact-container hr {
-  border: 1px solid var(--brand-1);
-  margin: 2rem auto;
-  width: calc(100% + 48px);
-  position: relative;
-  left: -24px;
+
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey);
+  padding-block: 24px;
+}
+
+.contact-footer h1 {
+  font-size: 1.5rem;
+  color: var(--brand-1);
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 24px;
+
+  svg, img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    margin-inline: 64px;
+  }
+
+  .cv-preview {
+    margin-inline: 64px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+
+  .about-me {
+    margin-inline: 64px;
+  }
+
+  .about-me-title > span:not(h1 span), .about-me-content > span:not(h1 span) {
+    font-size: 18px !important;
+  }
+  .about-me-title h1 {
+    padding-left: 24px;
+    padding-bottom: 10px;
+  }
+
+  .about-me-title h1 {
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  .about-me-content p {
+    padding-left: 24px;
+  }
+
+  .about-me-container {
+    padding-inline: 64px;
+    gap: 32px;
+  }
+
+  .about-me-container img {
+    width: 65% !important;
+  }
+
+  .about-me-text {
+    padding-inline: 40px;
+  }
+
+  .skills-container {
+    padding-inline: 64px;
+  }
+
+  .skills-list {
+    justify-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    column-gap: 96px;
+    row-gap: 32px;
+  }
+  
+  .skill {
+    max-width: fit-content;
+  }
+
+  .skill img {
+    width: 144px;
+  }
+
+  .skill span {
+    font-size: 32px;
+  }
+
+  .works-container {
+    padding-inline: 64px;
+  }
+
+  .work-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+  }
+
+  .contact-container {
+    padding-inline: 64px;
+  }
+  
 }
