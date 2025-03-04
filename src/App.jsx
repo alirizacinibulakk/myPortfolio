@@ -3,6 +3,7 @@ import TiltImage from './components/TiltImage';
 
 function App() {
 
+
   return (
     <>
       <header>
@@ -18,84 +19,91 @@ function App() {
           <a href="https://www.github.com/alirizacinibulakk" target='_blank'><img src="\images\icon-github.svg" alt="github" /></a>
         </div>
       </header >
-      <div className="cv-preview">
-        <img className='profile-img' src="/images/profile-img.svg" alt="profile photo" />
-        <h2>Ali Rıza Çinibulak</h2>
-        <p>Frontend Developer</p>
-        <div className="contact">
-          <p>
-            <img src="/images/icon-mail.svg" alt="email" />
-            <span>
-              <a href="mailto:alirizacinibulak@gmail.com">alirizacinibulak@gmail.com</a>
-            </span>
-          </p>
-          <p>
-            <img src="/images/icon-map.svg" alt="location" />
-            <span>İstanbul, Turkey</span>
-          </p>
-          <p>
-            <img src="/images/icon-briefcase.svg" alt="briefcase" />
-            <span>Full-time / Freelancer</span>
-          </p>
-          <p>
-            <img src="/images/icon-link.svg" alt="website" />
-            <span>www.alirizacinibulak.com</span>
-          </p>
+      <div className="hero-section">
+        <div className="cv-preview">
+          <img className='profile-img' src="/images/profile-img.svg" alt="profile photo" />
+          <h2>Ali Rıza Çinibulak</h2>
+          <p>Frontend Developer</p>
+          <div className="contact">
+            <p>
+              <img src="/images/icon-mail.svg" alt="email" />
+              <span>
+                <a href="mailto:alirizacinibulak@gmail.com">alirizacinibulak@gmail.com</a>
+              </span>
+            </p>
+            <p>
+              <img src="/images/icon-map.svg" alt="location" />
+              <span>İstanbul, Turkey</span>
+            </p>
+            <p>
+              <img src="/images/icon-briefcase.svg" alt="briefcase" />
+              <span>Full-time / Freelancer</span>
+            </p>
+            <p>
+              <img src="/images/icon-link.svg" alt="website" />
+              <span>www.alirizacinibulak.com</span>
+            </p>
+          </div>
+          <div className="skills">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <a href="">Download CV <img src="/images/icon-download.svg" alt="download cv" /></a>
         </div>
-        <div className="skills">
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>React</li>
-          </ul>
+        <div className="about-me">
+          <div className="about-me-title">
+            <span>&lt;h1&gt;</span>
+            <h1>
+              <span className="greeting">Hey</span>
+              <span className="name">I'm <span>Ali Riza</span>,</span>
+              <span className="role">Frontend Developer</span>
+            </h1>
+            <span>&lt;/h1&gt;</span>
+          </div>
+          <div className="about-me-content">
+            <span>&lt;p&gt;</span>
+            <p>I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done,</p>
+            <span>&lt;/p&gt;</span>
+          </div>
+          <a href="https://www.linkedin.com/in/alirizacinibulak/" target='_blank'>Let's Talk<span><img src="/images/icon-mail.svg" alt="email" /></span></a>
         </div>
-        <a href="">Download CV <img src="/images/icon-download.svg" alt="download cv" /></a>
       </div>
-      <div className="about-me">
-        <div className="about-me-title">
-          <span>&lt;h1&gt;</span>
-          <h1>
-            <span className="greeting">Hey</span>
-            <span className="name">I'm <span>Ali Riza</span>,</span>
-            <span className="role">Frontend Developer</span>
-          </h1>
-          <span>&lt;/h1&gt;</span>
-        </div>
-        <div className="about-me-content">
-          <span>&lt;p&gt;</span>
-          <p>I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done,</p>
-          <span>&lt;/p&gt;</span>
-        </div>
-        <a href="https://www.linkedin.com/in/alirizacinibulak/" target='_blank'>Let's Talk<span><img src="/images/icon-mail.svg" alt="email" /></span></a>
-      </div>
+
       <div className="about-me-container">
+        {/* <img className='scroll' src="/images/scroll.svg" alt="" /> */}
         <h2>About me</h2>
-        <img src="/images/me.jpg" alt="" />
-        <div className="about-me-text">
-          <span>&lt;p&gt;</span>
-          <h3>Hello!</h3>
-          <p>
-            My name is Ali Riza and I specialize in web development that utilizes
-            <span> HTML</span>,
-            <span> CSS</span>,
-            <span> JS</span> and
-            <span> REACT</span> etc.
-          </p>
-          <p>
-            I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving.
-          </p>
-          <p>
-            When I'm not coding, I am
-            <span> writing blogs</span>, reading, or picking up
-            some new hands-on art project like
-            <span> photography</span>.
-          </p>
-          <p>
-            I like to have my perspective and belief systems challenged so that I see the world through new eyes.
-          </p>
-          <span>&lt;/p&gt;</span>
+        <div className="content-wrapper">
+          <img src="/images/me.jpg" alt="" />
+          <div className="about-me-text">
+            <span>&lt;p&gt;</span>
+            <h3>Hello!</h3>
+            <p>
+              My name is Ali Riza and I specialize in web development that utilizes
+              <span> HTML</span>,
+              <span> CSS</span>,
+              <span> JS</span> and
+              <span> REACT</span> etc.
+            </p>
+            <p>
+              I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving.
+            </p>
+            <p>
+              When I'm not coding, I am
+              <span> writing blogs</span>, reading, or picking up
+              some new hands-on art project like
+              <span> photography</span>.
+            </p>
+            <p>
+              I like to have my perspective and belief systems challenged so that I see the world through new eyes.
+            </p>
+            <span>&lt;/p&gt;</span>
+          </div>
         </div>
+
       </div>
       <div className="skills-container">
         <h2>Skills</h2>
