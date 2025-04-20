@@ -89,21 +89,13 @@ function App() {
               <span> REACT</span> etc.
             </p>
             <p>
-              I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving.
-            </p>
-            <p>
-              When I'm not coding, I am
-              <span> writing blogs</span>, reading, or picking up
-              some new hands-on art project like
-              <span> photography</span>.
-            </p>
-            <p>
-              I like to have my perspective and belief systems challenged so that I see the world through new eyes.
+              I’m a Frontend Developer who builds modern and user-friendly interfaces. I’m skilled in HTML, CSS, and JavaScript, and I’m always learning to create dynamic and engaging web experiences. I care about details, enjoy learning, and approach every project with both a technical and creative mindset.
+
+              Let’s build something awesome together.
             </p>
             <span>&lt;/p&gt;</span>
           </div>
         </div>
-
       </div>
       <div className="skills-container">
         <h2>Skills</h2>

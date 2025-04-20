@@ -329,7 +329,7 @@ header h1 {
 }
 
 .about-me-container {
-  background-image: linear-gradient(rgba(26, 30, 35, 0.9), rgba(26, 30, 35, 0.9)), url('./images/about-bg.png');
+  background-image: linear-gradient(rgba(26, 30, 35, 0.9), rgba(26, 30, 35, 0.9)), url('/images/about-bg.png');
   padding: 64px 24px;
   display: flex;
   flex-direction: column;
@@ -389,6 +389,7 @@ header h1 {
   font-size: 32px;
   line-height: 42px;
   color: var(--brand-1);
+  margin-left: 20px;
 }
 
 .about-me-text p {
@@ -396,6 +397,7 @@ header h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin-left: 20px;
 
   span {
     color: var(--brand-1);
@@ -411,7 +413,7 @@ header h1 {
 }
 
 .skills-container {
-  background-image: linear-gradient(rgba(26, 30, 35, 0.9), rgba(26, 30, 35, 0.9)), url('./images/skills-bg.png');
+  background-image: linear-gradient(rgba(26, 30, 35, 0.9), rgba(26, 30, 35, 0.9)), url('/images/skills-bg.png');
   display: flex;
   flex-direction: column;
   margin-inline: auto;
@@ -489,6 +491,7 @@ header h1 {
   &:nth-child(8) span {
     color: #f37036;
   }
+
 }
 
 .skill img {
@@ -510,7 +513,7 @@ header h1 {
 
 
 .works-container {
-  background-image: linear-gradient(rgba(26, 30, 35, 0.9), rgba(26, 30, 35, 0.9)), url('./images/works-bg.png');
+  background-image: linear-gradient(rgba(26, 30, 35, 0.9), rgba(26, 30, 35, 0.9)), url('/images/works-bg.png');
   display: flex;
   flex-direction: column;
   margin-inline: auto;
